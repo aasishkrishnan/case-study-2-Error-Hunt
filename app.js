@@ -69,6 +69,7 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
-    console.log("Server Ready on 5000");
-});
+// Get the port:
+const PORT = process.env.PORT || 3000;
+// Listen on the port:
+app.listen(PORT, () => console.log('Listening on', PORT));
